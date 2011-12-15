@@ -17,7 +17,7 @@ class User < ActiveRecord::Base
     # the name to the database.
     #
     # @see http://guides.rubyonrails.org/active_record_validations_callbacks.html#valid-and-invalid
-    validates :name, :presence => true
+    validates_presence_of :name
     
     # We are stating that we have a relationship between Users and Assignments. 
     #

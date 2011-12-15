@@ -11,5 +11,5 @@ class Assignment < ActiveRecord::Base
     # @see db/migrate/002_create_assignments.rb
     #
     belongs_to :user
-
+    validates_presence_of :user
 end
